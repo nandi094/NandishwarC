@@ -24,3 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+ fetch('json/skills.json')
+        .then(response => response.json())
+        .then(data => {
+            const skills = data.skills;
+            const tableBody = document.querySelector('#skillsTable tbody');
+
+            skills.forEach(skill => {
+                const row = document.createElement('tr');
+                const cell = document.createElement('td');
+                cell.textContent = skill;
+                row.appendChild(cell);
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => console.error('Error fetching skills data:', error));
+
