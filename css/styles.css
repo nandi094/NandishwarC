@@ -1,6 +1,6 @@
 header {
-    background-color: #333;
-    color: #5745f8;
+    background-color: #959f9f;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
@@ -28,8 +28,8 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #5745f8;
+    background-color: #959f9f;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -98,4 +98,24 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     display: inline-block;
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.soft-skill {
+    background-color: #b3e6e6;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
