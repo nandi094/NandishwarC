@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
+console.log('add JSON');
  fetch('json/skills.json')
         .then(response => response.json())
         .then(data => {
