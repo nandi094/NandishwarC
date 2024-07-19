@@ -26,18 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 console.log('add JSON');
  fetch('json/skills.json')
+    fetch('skills.json')
         .then(response => response.json())
         .then(data => {
             const skills = data.skills;
-            const tableBody = document.querySelector('#skillsTable tbody');
+            const skillsContainer = document.getElementById('skillsContainer');
 
             skills.forEach(skill => {
-                const row = document.createElement('tr');
-                const cell = document.createElement('td');
-                cell.textContent = skill;
-                row.appendChild(cell);
-                tableBody.appendChild(row);
+                const skillDiv = document.createElement('div');
+                skillDiv.className = 'skill';
+                skillDiv.textContent = skill;
+                skillsContainer.appendChild(skillDiv);
             });
         })
         .catch(error => console.error('Error fetching skills data:', error));
+
 
