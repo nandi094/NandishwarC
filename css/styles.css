@@ -1,6 +1,6 @@
 header {
     background-color: #333;
-    color: #fff;
+    color: #5745f8;
     padding: 10px 0;
     text-align: center;
 }
@@ -29,10 +29,10 @@ main {
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #5745f8;
     text-align: center;
     padding: 10px 0;
-    position: flex;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
